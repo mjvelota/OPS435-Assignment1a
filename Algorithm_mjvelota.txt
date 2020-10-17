@@ -1,0 +1,45 @@
+Step 01:
+
+Check if length of command line arguments is not 2 , if it is true then just print the usage() function of OS and exit from program otherwise continue to Step 02.
+
+
+
+Step 02:
+
+Create a list named month_name  and add all of the months in it similarly create a list named days_in_month and add number of days in each month i-e for February the days would be like 1:28 also create a variable named user_raw_data  and fill it with first command line argument and continue to Step 03.
+
+
+
+Step 03:
+
+Now create a string named allow_chars and fill it with numbers only now call the sanitize function of python and sanitize raw data on the basis of allow_chars means remove all of the things from user_raw_data except for numbers and save it in DOB variable in this way DOB will only be numbers and there won't be anything else now print this date to insure everything is sanitized correctly.
+
+
+
+Step 04:
+
+Now check DOB is of size 8 i-e (19970920) If it is not of size 8 then it means user have entered incorrect data so print the error message and exit from the system otherwise continue to step 05.
+
+
+
+Step 05:
+
+Now separate month, day and year in such a way that first 4 characters of DOB is year , next 2 characters in DOB is Month and anything after that is Day and save them in their respective variables and continue to step 06.
+
+
+
+Step 06:
+
+Now check if year is between 1900 and 9999 if it is false then print an error message and exit from program, similarly check if month is between 1 and 12 if it is false print an error message and exit out of system, No check if year is leap year or not if it is a leap year then change days_in_month  at index 2 to 29, Now check if the day provided by user is present in the days_in_month[month] list i-e if user has provided following date 1997-12-22 then check if 22 is present in days_in_month[12] if it is true then continue otherwis print error message and exit out of program.
+
+
+
+Step 07:
+
+Now create Date of birth by using str function and concatenating month, day and year we are using [month-1] because of indexing of lists and in this way we create our new date of birth.
+
+
+
+Step 08:
+
+Print newly created date of birth and end the program.
